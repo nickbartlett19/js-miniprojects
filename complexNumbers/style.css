@@ -1,0 +1,46 @@
+body {
+    height: 80vh;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: gray;
+    border-radius: 10px;
+}
+
+.center-box {
+    height: 500px;
+    width: 500px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: vertical;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+#realPart {
+    background: blue;
+}
+
+#compPart {
+    background: red;
+}
+
+#myCanvas {
+    border: 1px solid black;
+}

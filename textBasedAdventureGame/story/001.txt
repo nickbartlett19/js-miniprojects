@@ -1,0 +1,18 @@
+001
+Start
+---
+You awaken at dawn, rubbing the sleep and wisps of campfire smoke from your eyes. Your
+horse, still bridled, whinnies as Dawn's fingers slip through wooded horizon. A wide
+clearing surrounds you, and tall, slender birches clump along its edges. In the distance,
+a man approaches your campsite.
+
+"Greetings traveler, it is I, a herald of his Majesty King Alfred! Listen well, for grim
+tidings await you. A princess of the royal blood has been captured by the King's 
+wicked brother, the dark wizard Galtha. His intentions are unknown, but surely, his 
+enchantments have only a terrible purpose. The country folk know you as a brave
+and honorable knight. Will you rescue her from his Tower?"
+---
+Option 1: Saddle your horse, sharpen your sword, and ride for the Tower.
+Option 2: Ask the herald what reward is offered for such a perilous quest.
+Option 3: Roll over and sleep it off. 
+---

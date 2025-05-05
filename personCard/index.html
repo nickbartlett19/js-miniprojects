@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonCard</title>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-center flex-col">
+    <div class = "intro-text">
+        <h1 class="text-center">PersonCard</h1>
+        <p class="text-center">by Nick Bartlett</p>
+        <p>PersonCard is an experiment with rendering cards with the data from a user's form submission. </p>
+    </div>
+
+    <hr>
+
+    <form class = "text-center" onsubmit = "myFunction()">
+        <div class="flex">
+            <label for="userName">Name:</label>
+            <input type="text" id = "userName" name = "name" class= "input-box">
+        </div>
+
+        <div class="flex">
+            <label for="userBio">Bio:</label>
+            <input type="text" id = "userBio" name = "bio" class="input-box">
+        </div>
+        <div id="data" class="flex">
+            <label>Birthday: </label>
+            <input type="date" id ="userBDay" name = "birthday">
+        </div>
+        <div class="flex flex-center">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div class="person-card-grid flex flex-center">
+        <div class="person-card flex flex-center flex-col">
+            <img src="img/head.jpg" alt="user with no picture" class="person-head">
+            <p>Name: Nick Bartlett</p>
+            <p>Bio: Creator of PersonCard </p>
+            <p>Birthday: 1998-06-11</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+form {
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+label, button {
+    display: inline-block;
+    min-width: 90px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+.input-box {
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+label {
+    margin: 5px;
+}
+
+.person-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-card-grid {
+    flex-wrap: wrap;
+}
+
+.person-head {
+    max-width: 90%;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;               
+    background-color: #ccc;
+    height: 1px;
+}
+  
+.text-center {
+    text-align: center;
+}

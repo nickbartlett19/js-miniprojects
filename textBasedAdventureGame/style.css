@@ -1,0 +1,81 @@
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-box, .option-box {
+    background-color: rgb(77, 44, 9);
+    margin: 5px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-box {
+    height: 500px;
+    flex-basis: 900px;
+    flex-grow: 5;
+}
+
+.screen-text {
+    padding: 25px;
+}
+
+.screen-box-side {
+    flex-grow: 1;
+    flex-basis: 100px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.options-container {
+    display: flex;
+}
+
+.option-box {
+    height: 200px;
+    width: 300px;
+}
+
+.option-box:hover {
+    background-color: rgb(97, 57, 14);
+}
+
+.chalice-img {
+    height:25%;
+    width:50%;
+}
+
+.fire-img {
+    height: 10%;
+    width: 50%
+}
+
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 900px) {
+    .options-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option-box {
+        height: 100px;
+        width: 50vw;
+    }
+}

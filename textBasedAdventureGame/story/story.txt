@@ -1,0 +1,11 @@
+For the game itself, I'm thinking of a classic fantasy trope. An evil Wizard
+has kidnapped a princess, and a knight has to rescue her from his tower.
+
+Names
+Wizard - Galtha
+Princess - Meriea
+Knight - Sir Lancard
+King - Alfred
+
+Each GameStage block will have three components: a description, speech/prompt, and 
+a question - what will you do?
