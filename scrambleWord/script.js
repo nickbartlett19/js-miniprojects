@@ -7,3 +7,12 @@
 // Ensure that the player never gets the same word twice in a single game.
 
 console.log('test');
+
+function scrambleWord(word) {
+    
+    return scrambledWord;
+}
+
+fetch("./dictionary.JSON")
+.then(res => res.json())
+.then(data => console.log(data))
