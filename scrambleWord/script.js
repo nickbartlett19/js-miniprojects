@@ -13,6 +13,8 @@ function scrambleWord(word) {
     return scrambledWord;
 }
 
-fetch("./dictionary.JSON")
-.then(res => res.json())
-.then(data => console.log(data))
+// fetch("./dictionary.JSON")
+// .then(res => res.json())
+// .then(data => console.log(data))
+
+// console.log(data);
