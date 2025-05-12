@@ -1,3 +1,19 @@
 body {
     background-color: lightseagreen;
+    width: 100vw;
+    height: 98vh;
+}
+
+div.game {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
 }
