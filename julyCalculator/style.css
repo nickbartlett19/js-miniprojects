@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    height:435px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px;
+
+    background-color:gray;
+}
+
+.btn, .ac-btn, .equals-btn, .screen {
+    border: 1px solid black;
+    margin:2px;
+    background-color:white;
+    /* padding:5px; */
+}
+
+.btn:hover, .ac-btn:hover, .equals-btn:hover {
+    background-color: lightgray;
+}
+
+.screen-top {
+    height: 50px;
+    width: 196px;
+}
+
+.screen-bottom {
+    height: 100px;
+    width: 196px;
+}
+
+.btn {
+    height:50px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ac, .equals {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
