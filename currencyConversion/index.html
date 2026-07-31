@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currencyConversion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <p>A tool that takes live currency exchange rates and allows the user to convert between currencies.</p>
+    <div class="main-area flex-row">
+        <div class="convert-from">
+            <form>
+                <label for="number-input">Currency to be converted from:</label>
+                <input id="number-input" type="number">
+                <select name="currency-select" required="true">
+                    <option value="USD">USD ($)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="RUB">RUB (₽)</option>
+                    <option value="CNY">CNY (¥)</option>
+                    <option value="JPY">JPY (¥)</option>
+                </select>
+            </form>
+        </div>
+
+        <span class="arrow">-></span>
+
+    </div>
+</body>
+</html>

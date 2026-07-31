@@ -1,0 +1,12 @@
+body {
+    background-color:lightblue;
+}
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
+
+.arrow {
+    margin-left: 10px;
+}
