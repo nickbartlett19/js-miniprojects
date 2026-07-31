@@ -1,0 +1,39 @@
+body {
+    background-color: beige;
+
+    height: 99vh;
+}
+
+.game-board {
+    background-color: gray;
+
+    border-radius: 15px;
+    padding:5px;
+}
+
+.game-board-tile {
+    background-color:lightgray;
+    height: 100px;
+    width: 100px;
+
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.tile-value {
+    font-size:40px;
+    color: #4d3635;
+    font-family:"Clear Sans", sans-serif;
+    font-weight: bold;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
