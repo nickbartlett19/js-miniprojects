@@ -41,9 +41,6 @@ function styleTiles() {
 
 }
 
-// clearBoard()
-// iterate each tile, if innerText, remove it
-
 function clearBoard() {
 
     console.log('Clearing the board...');
@@ -55,10 +52,21 @@ function clearBoard() {
     });
 
     styleTiles();
+
 }
 
 // populateBoard(num of tiles)
 // check if num of tiles > 16
 // then iterate through tiles, randomly adding values until you've added enough
+
+function populateBoard(numTiles) {
+    if (numTiles > 16) return;
+
+    console.log('Populating the board...')
+}
+
+populateBoard(15);
+
+
 
 styleTiles()
