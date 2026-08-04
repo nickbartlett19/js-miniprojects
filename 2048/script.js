@@ -1,8 +1,10 @@
 const gameBoardTiles = document.querySelectorAll('.game-board-tile');
 
 const clearButton = document.getElementById('clearButton');
+const populateButton = document.getElementById('populateButton');
 
 clearButton.addEventListener('click', clearBoard);
+populateButton.addEventListener('click', populateBoard);
 
 // add styling
 
@@ -64,9 +66,5 @@ function populateBoard(numTiles) {
 
     console.log('Populating the board...')
 }
-
-populateBoard(15);
-
-
 
 styleTiles()
