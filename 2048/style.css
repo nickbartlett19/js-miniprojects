@@ -4,11 +4,17 @@ body {
     height: 98vh;
 }
 
+button {
+    margin: 4px;
+}
+
 .game-board {
     background-color: gray;
 
     border-radius: 15px;
     padding:5px;
+
+    margin: 4px;
 }
 
 .game-board-tile {

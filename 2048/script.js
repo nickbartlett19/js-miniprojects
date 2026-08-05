@@ -57,6 +57,12 @@ function clearBoard() {
 
 }
 
+// shiftBoard(direction)
+
+// function shiftBoard(direction) {
+//     console.log(direction);
+// }
+
 // populateBoard(num of tiles)
 // check if num of tiles > 16
 // then iterate through tiles, randomly adding values until you've added enough
@@ -68,3 +74,22 @@ function populateBoard(numTiles) {
 }
 
 styleTiles()
+
+
+// working on keystrokes
+
+document.addEventListener('keydown', keyPress => arrowKeyInput(keyPress));
+
+function arrowKeyInput(keyPress) {
+
+    if (!['ArrowDown', 'ArrowUp', 'ArrowRight', 'ArrowLeft'].includes(keyPress.key)) return;
+
+    // console.log(keyPress.key);
+
+    // switch 
+
+    shiftBoard()
+
+
+
+}
