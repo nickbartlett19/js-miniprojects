@@ -59,9 +59,9 @@ function clearBoard() {
 
 // shiftBoard(direction)
 
-// function shiftBoard(direction) {
-//     console.log(direction);
-// }
+function shiftBoard(direction) {
+    console.log(direction);
+}
 
 // populateBoard(num of tiles)
 // check if num of tiles > 16
@@ -82,14 +82,24 @@ document.addEventListener('keydown', keyPress => arrowKeyInput(keyPress));
 
 function arrowKeyInput(keyPress) {
 
+    // Ensure keyPress is one of the four arrow keys.
     if (!['ArrowDown', 'ArrowUp', 'ArrowRight', 'ArrowLeft'].includes(keyPress.key)) return;
 
     // console.log(keyPress.key);
 
-    // switch 
-
-    shiftBoard()
-
-
-
+    switch(keyPress.key) {
+        case 'ArrowDown':
+            shiftBoard('Down');
+            break;
+        case 'ArrowUp':
+            shiftBoard('Up');
+            break;
+        case 'ArrowRight':
+            shiftBoard('Right');
+            break;
+        case 'ArrowLeft':
+            shiftBoard('Left');
+            break;
+    }
+    
 }
