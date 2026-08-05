@@ -61,6 +61,26 @@ button {
     background-color: yellow;
 }
 
+.game-score, .high-score {
+    margin: 4px;
+    padding: 10px;
+
+    width: 150px;
+
+    border: #4d3635 1px solid;
+    border-radius: 20px;
+
+    color: #4d3635;
+    font-family:"Clear Sans", sans-serif;
+    font-weight: bold;
+
+    background-color: white;
+}
+
+.score-board {
+    margin-bottom: 40px;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
