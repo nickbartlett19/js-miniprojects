@@ -81,6 +81,15 @@ button {
     margin-bottom: 40px;
 }
 
+.intro-text {
+    margin-bottom: 40px;
+
+    color: #4d3635;
+    font-family:"Clear Sans", sans-serif;
+    font-weight: bold;
+
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
