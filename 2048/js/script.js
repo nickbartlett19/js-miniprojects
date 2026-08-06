@@ -103,3 +103,19 @@ function arrowKeyInput(keyPress) {
     }
     
 }
+
+// function printBoard(board) {
+//     board.forEach(row => 
+//         let 
+//         console.log(row,' ]')
+//     );
+// }
+
+let gameBoard = [
+    ['', '', '', ''],
+    ['', '', '', ''],
+    ['', '', '', ''],
+    ['', '', '', '']
+];
+
+printBoard(gameBoard);
