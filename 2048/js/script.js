@@ -104,18 +104,20 @@ function arrowKeyInput(keyPress) {
     
 }
 
-// function printBoard(board) {
-//     board.forEach(row => 
-//         let 
-//         console.log(row,' ]')
-//     );
-// }
+function printBoard(board) {
+    let counter = 1;
+    board.forEach(row => {
+        let rowString = 'Row ' + counter.toString() + ': [' + row[0] + ', ' + row[1] + ', ' + row[2] + ', ' + row[3] + ']';
+        console.log(rowString);
+        counter++;
+    });
+}
 
 let gameBoard = [
-    ['', '', '', ''],
-    ['', '', '', ''],
-    ['', '', '', ''],
-    ['', '', '', '']
+    ['2', '2', '2', '2'],
+    ['2', '2', '2', '2'],
+    ['2', '2', '2', '2'],
+    ['2', '2', '2', '2']
 ];
 
 printBoard(gameBoard);
