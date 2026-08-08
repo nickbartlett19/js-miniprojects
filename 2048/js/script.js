@@ -43,19 +43,19 @@ function styleTiles() {
 
 }
 
-function clearBoard() {
+// function clearBoard() {
 
-    console.log('Clearing the board...');
+//     console.log('Clearing the board...');
 
-    gameBoardTiles.forEach(tile => {
-        if (tile.children[0].innerText) {
-            tile.children[0].innerText = '';
-        }
-    });
+//     gameBoardTiles.forEach(tile => {
+//         if (tile.children[0].innerText) {
+//             tile.children[0].innerText = '';
+//         }
+//     });
 
-    styleTiles();
+//     styleTiles();
 
-}
+// }
 
 // shiftBoard(direction)
 
@@ -113,6 +113,14 @@ function printBoard(board) {
     });
 }
 
+function clearBoard(board) {
+    for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+            board[i][j] = '';
+        }
+    }
+}
+
 let gameBoard = [
     ['2', '2', '2', '2'],
     ['2', '2', '2', '2'],
@@ -120,4 +128,8 @@ let gameBoard = [
     ['2', '2', '2', '2']
 ];
 
-printBoard(gameBoard);
+// printBoard(gameBoard);
+
+// clearBoard(gameBoard);
+
+// printBoard(gameBoard);
