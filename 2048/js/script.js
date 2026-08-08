@@ -3,7 +3,7 @@ const gameBoardTiles = document.querySelectorAll('.game-board-tile');
 const clearButton = document.getElementById('clearButton');
 const populateButton = document.getElementById('populateButton');
 
-clearButton.addEventListener('click', clearBoard);
+clearButton.addEventListener('click', clearBoardDisplay);
 populateButton.addEventListener('click', populateBoard);
 
 // add styling
@@ -43,19 +43,19 @@ function styleTiles() {
 
 }
 
-// function clearBoard() {
+function clearBoardDisplay() {
 
-//     console.log('Clearing the board...');
+    console.log('Clearing the board display...');
 
-//     gameBoardTiles.forEach(tile => {
-//         if (tile.children[0].innerText) {
-//             tile.children[0].innerText = '';
-//         }
-//     });
+    gameBoardTiles.forEach(tile => {
+        if (tile.children[0].innerText) {
+            tile.children[0].innerText = '';
+        }
+    });
 
-//     styleTiles();
+    styleTiles();
 
-// }
+}
 
 // shiftBoard(direction)
 
@@ -133,3 +133,22 @@ let gameBoard = [
 // clearBoard(gameBoard);
 
 // printBoard(gameBoard);
+
+function updateBoardDisplay(board) {
+    let gameBoardArray = [...gameBoard[0], ...gameBoard[1], ...gameBoard[2], ...gameBoard[3]];
+
+    // console.log(gameBoardArray);
+
+    for (let i = 0; i < 16; i++) {
+        gameBoardTiles[i].innerText = gameBoardArray[i];
+    }
+
+    // console.log(gameBoardTiles[1]);
+
+//     gameBoardTiles.forEach(tile => {
+//         tile.innerText = ''
+//     })
+}
+
+updateBoardDisplay(gameBoard);
+styleTiles();
