@@ -1,12 +1,3 @@
-const gameBoardTiles = document.querySelectorAll('.game-board-tile');
-
-const clearButton = document.getElementById('clearButton');
-const populateButton = document.getElementById('populateButton');
-
-clearButton.addEventListener('click', clearBoardDisplay);
-populateButton.addEventListener('click', populateBoard);
-
-// add styling
 
 function styleTiles() {
 
@@ -43,20 +34,6 @@ function styleTiles() {
 
 }
 
-function clearBoardDisplay() {
-
-    console.log('Clearing the board display...');
-
-    gameBoardTiles.forEach(tile => {
-        if (tile.children[0].innerText) {
-            tile.children[0].innerText = '';
-        }
-    });
-
-    styleTiles();
-
-}
-
 // shiftBoard(direction)
 
 function shiftBoard(direction) {
@@ -72,13 +49,6 @@ function populateBoard(numTiles) {
 
     console.log('Populating the board...')
 }
-
-styleTiles()
-
-
-// working on keystrokes
-
-document.addEventListener('keydown', keyPress => arrowKeyInput(keyPress));
 
 function arrowKeyInput(keyPress) {
 
@@ -121,6 +91,41 @@ function clearBoard(board) {
     }
 }
 
+function updateBoardDisplay(board) {
+    
+    let gameBoardArray = [...board[0], ...board[1], ...board[2], ...board[3]];
+
+    for (let i = 0; i < 16; i++) {
+        gameBoardTiles[i].innerText = gameBoardArray[i];
+    }
+
+}
+
+function clearBoardDisplay() {
+
+    console.log('Clearing the board display...');
+
+    gameBoardTiles.forEach(tile => {
+        if (tile.children[0].innerText) {
+            tile.children[0].innerText = '';
+        }
+    });
+
+    styleTiles();
+
+}
+
+const gameBoardTiles = document.querySelectorAll('.game-board-tile');
+
+const clearButton = document.getElementById('clearButton');
+const populateButton = document.getElementById('populateButton');
+
+document.addEventListener('keydown', keyPress => arrowKeyInput(keyPress));
+
+clearButton.addEventListener('click', clearBoardDisplay);
+populateButton.addEventListener('click', populateBoard);
+
+
 let gameBoard = [
     ['2', '2', '2', '2'],
     ['2', '2', '2', '2'],
@@ -128,27 +133,7 @@ let gameBoard = [
     ['2', '2', '2', '2']
 ];
 
-// printBoard(gameBoard);
+styleTiles()
 
-// clearBoard(gameBoard);
-
-// printBoard(gameBoard);
-
-function updateBoardDisplay(board) {
-    let gameBoardArray = [...gameBoard[0], ...gameBoard[1], ...gameBoard[2], ...gameBoard[3]];
-
-    // console.log(gameBoardArray);
-
-    for (let i = 0; i < 16; i++) {
-        gameBoardTiles[i].innerText = gameBoardArray[i];
-    }
-
-    // console.log(gameBoardTiles[1]);
-
-//     gameBoardTiles.forEach(tile => {
-//         tile.innerText = ''
-//     })
-}
-
-updateBoardDisplay(gameBoard);
-styleTiles();
+// updateBoardDisplay(gameBoard);
+// styleTiles();
